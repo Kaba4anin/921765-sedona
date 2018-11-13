@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Станислав Кабанов](https://up.htmlacademy.ru/htmlcss/23/user/921765).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Кан] (https://htmlacademy.ru/profile/viktorkan).
 
 ---
 
