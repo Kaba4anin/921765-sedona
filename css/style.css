@@ -18,9 +18,38 @@ a {
   color: #000000;
 }
 
-.site-navigation {
-  list-style: none;
+.container{
+  width: 1200px;
+  margin-left: auto; 
+  margin-right: auto; 
 }
+
+/*временный элемент*/
+.main-header{
+  background-color: rgba(150, 214, 150, 0.5);
+}
+/*временный элемент*/
+
+
+.site-navigation {
+  display: flex;
+  list-style: none;
+
+  /*временный элемент*/
+  outline: 1px solid red;
+  /*временный элемент*/
+
+  margin: 0;
+  padding: 0;
+}
+
+
+/*временный элемент*/
+.main-header-logo{
+  outline: 1px solid rgb(96, 48, 141);
+}
+/*временный элемент*/
+
 
 .site-navigation a {
   color: #000000;
@@ -40,12 +69,31 @@ a {
   background-repeat: no-repeat;
 }
 
-.about-sedona p:first-of-type{
+.main-background img{
+  width: 459px;
+  margin-right: 371px;
+  margin-left: 370px;
+}
+
+.about-sedona{
+  text-align: center;
+}
+
+.about-sedona p:first-of-type{ 
+  width: 440px;
   font-size: 21px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-sedona p:last-of-type{
   font-weight: 400;
+}
+.appointment{
+  width: 434px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .appointment > p:first-of-type{
@@ -82,6 +130,15 @@ a {
   background-color: #503e33;
 }
 
+.main-footer{
+  display: flex;
+  justify-content: space-around;
+  /*временный элемент*/
+  background-color: rgba(150, 214, 150, 0.5);
+  /*временный элемент*/
+
+}
+
 .main-footer > p {
   font-size: 21px;
 }
@@ -92,6 +149,11 @@ a {
 
 .footer-copyright p{
   font-weight: 400;
+}
+
+.catalog-list{
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog-item h3 {
