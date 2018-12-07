@@ -24,32 +24,44 @@ a {
   margin-right: auto; 
 }
 
-/*временный элемент*/
-.main-header{
-  background-color: rgba(150, 214, 150, 0.5);
-}
-/*временный элемент*/
-
-
 .site-navigation {
   display: flex;
+  justify-content: center;
+  position: relative;
   list-style: none;
-
-  /*временный элемент*/
-  outline: 1px solid red;
-  /*временный элемент*/
-
+  min-height: 56px;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
 
 
-/*временный элемент*/
-.main-header-logo{
-  outline: 1px solid rgb(96, 48, 141);
-}
-/*временный элемент*/
 
+.main-header-logo{
+  position: absolute;
+  left: 46%;
+  z-index: 1;
+}
+
+.site-navigation-info{
+  width: 239px;
+  text-align: left;
+}
+
+.site-navigation-foto{
+  width: 239px;
+  text-align: left;
+}
+
+.site-navigation-map{
+  width: 239px;
+  text-align: right;
+}
+
+.site-navigation-catalog{
+  width: 239px;
+  text-align: right;
+}
 
 .site-navigation a {
   color: #000000;
@@ -65,18 +77,28 @@ a {
 }
 
 .main-background{
+  height: 509px;
   background-image: url("../img/background-photo.jpg");
   background-repeat: no-repeat;
 }
 
 .main-background img{
+  position: absolute;
+  top: 132px;
   width: 459px;
   margin-right: 371px;
   margin-left: 370px;
 }
 
+.visually-hidden{
+  display: none;
+
+}
+
 .about-sedona{
+  height: 216px;
   text-align: center;
+  padding-top: 61px;
 }
 
 .about-sedona p:first-of-type{ 
@@ -90,15 +112,21 @@ a {
   font-weight: 400;
 }
 .appointment{
-  width: 434px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 291px;
+  padding-top: 57px;
+  padding-bottom: 0;
+  align-items: center;
   text-align: center;
 }
 
 .appointment > p:first-of-type{
   font-size: 30px;
   line-height: 36px;
+  margin: 0;
+  
 }
 
 .appointment > p:nth-of-type(2) {
@@ -112,6 +140,9 @@ a {
 }
 
 .form-button{
+  height: 86px;
+  width: 568px;
+  margin-top: auto;
   font-size: 21px;
   color: #ffffff;
   background-color: #766357;
@@ -132,19 +163,30 @@ a {
 
 .main-footer{
   display: flex;
-  justify-content: space-around;
-  /*временный элемент*/
-  background-color: rgba(150, 214, 150, 0.5);
-  /*временный элемент*/
-
+  justify-content: center;
+  align-items: center;
+  min-height: 120px;
+  box-sizing: border-box;
+  padding-left: 132px;
+  padding-right: 101px;
 }
 
 .main-footer > p {
   font-size: 21px;
+  margin-right: auto;
+
 }
 
 .footer-social{
+  display: flex;
   list-style: none;
+  padding: 0;
+}
+
+.footer-copyright{
+  display: flex;
+  margin-left: auto;
+
 }
 
 .footer-copyright p{
@@ -154,26 +196,58 @@ a {
 .catalog-list{
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-item{
+  display: flex;
+  height: 151px;
+  justify-content: space-between;
+  padding: 0 72px;
+}
+
+.catalog-wrapper{
+  display: flex;
+  width: 258px;
+  margin-left: 30px;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+
+.catalog-item img{
+  align-self: center;
 }
 
 .catalog-item h3 {
+  width: 227px;
   font-size: 14px;
+  margin: 0;
 }
 
 .catalog-item p {
+  display: flex;
+  width: 117px;
   line-height: 21px;
   color: #333333;
+  margin: 0;
 }
 
-.catalog-item p:last-of-type {
+.catalog-item > p:last-of-type {
+  width: 110px;
   color: #666666;
   background-color: #f2f2f2;
+  margin: 93px 0 31px auto;
+
 }
 
 .info-button {
+  width: 110px;
+  height: 27px;
   line-height: 21px;
   color: #ffffff;
   background-color: #81b3d2;
+  margin-top: auto;
 }
 
 .info-button:hover,
@@ -190,9 +264,13 @@ a {
 }
 
 .booking-button {
+  width: 142px;
+  height: 27px;
   line-height: 21px;
   color: #ffffff;
   background-color: #766357;
+  margin-left: 6px;
+  margin-top: auto;
 }
 
 .booking-button:hover,

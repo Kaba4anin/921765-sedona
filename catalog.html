@@ -13,10 +13,10 @@
             <img src="img/main-header-logo.png" width="140" height="71" alt="Логотип «Сity of Sedona»">
           </a> 
           <ul class="site-navigation">
-            <li><a href="#">Информация</a></li>
-            <li><a href="#">Фото и видео</a></li>
-            <li><a href="#">Карта штата</a></li>
-            <li><a href="catalog.html">Гостиница</a></li>  
+            <li class="site-navigation-info"><a href="#">Информация</a></li>
+            <li class="site-navigation-foto"><a href="#">Фото и видео</a></li>
+            <li class="site-navigation-map"><a href="#">Карта штата</a></li>
+            <li class="site-navigation-catalog"><a href="catalog.html">Гостиница</a></li> 
         </ul> 
         </nav>
       </header>
@@ -26,29 +26,35 @@
           <ul class="catalog-list">
             <li class="catalog-item">
               <img src="img/Amara Resort and Spa.jpg" width="135" height="90" alt="Amara Resort &amp; Spa">
-              <h3>Amara Resort &amp; Spa</h3>
-              <p>Гостиница</p>
-              <p>От 4000 Р.</p>
-              <a class="info-button" href="#">Подробнее</a>
-              <a class="booking-button" href="#">Забронировать</a>
+              <div class="catalog-wrapper">
+                <h3>Amara Resort &amp; Spa</h3>
+                <p>Гостиница</p>
+                <p>От 4000 Р.</p>
+                <a class="info-button" href="#">Подробнее</a>
+                <a class="booking-button" href="#">Забронировать</a>
+              </div>
               <p>Рейтинг: 8,5</p>
             </li>
             <li class="catalog-item">
               <img src="img/Desert Quail Inn.jpg" width="135" height="90" alt="Desert Quail Inn">
-              <h3>Desert Quail Inn</h3>
-              <p>Мотель</p>
-              <p>От 3000 Р.</p>
-              <a class="info-button" href="#">Подробнее</a>
-              <a class="booking-button" href="#">Забронировать</a>
+              <div class="catalog-wrapper">
+                <h3>Desert Quail Inn</h3>
+                <p>Мотель</p>
+                <p>От 3000 Р.</p>
+                <a class="info-button" href="#">Подробнее</a>
+                <a class="booking-button" href="#">Забронировать</a>
+              </div>
               <p>Рейтинг: 8,9</p>
             </li>
             <li class="catalog-item">
               <img src="img/Villas at Poco Diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo">
-              <h3>Villas at Poco Diablo</h3>
-              <p>Апартаменты</p>
-              <p>От 2000 Р.</p>
-              <a class="info-button" href="#">Подробнее</a>
-              <a class="booking-button" href="#">Забронировать</a>
+              <div class="catalog-wrapper">
+                <h3>Villas at Poco Diablo</h3>
+                <p>Апартаменты</p>
+                <p>От 2000 Р.</p>
+                <a class="info-button" href="#">Подробнее</a>
+                <a class="booking-button" href="#">Забронировать</a>
+              </div>
               <p>Рейтинг: 9,2</p>
             </li>
           </ul>
@@ -56,13 +62,11 @@
       </main>
       <footer class="main-footer container">
         <p>#VISITSEDONA</p>
-        <div class="footer-social"></div>
-          <ul>
-            <li><a class="img/social-button" href="social-button-twitter.svg">Твитер</a></li>
-            <li><a class="img/social-button" href="social-button-fb.svg">Фейсбук</a></li>
-            <li><a class="img/social-button" href="social-button-youtube.svg">Ютуб</a></li>
-          </ul>
-        </div>
+        <ul class="footer-social">
+          <li><a class="img/social-button" href="social-button-twitter.svg">Твитер</a></li>
+          <li><a class="img/social-button" href="social-button-fb.svg">Фейсбук</a></li>
+          <li><a class="img/social-button" href="social-button-youtube.svg">Ютуб</a></li>
+        </ul>
         <div class="footer-copyright">
           <p>Website by</p>
           <a class="main-footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
