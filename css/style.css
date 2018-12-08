@@ -24,6 +24,10 @@ a {
   margin-right: auto; 
 }
 
+.main-header{
+  background-color: #ffffff;
+}
+
 .site-navigation {
   display: flex;
   justify-content: center;
@@ -78,16 +82,10 @@ a {
 
 .main-background{
   height: 509px;
+  text-align: center;
+  padding-top: 76px;
   background-image: url("../img/background-photo.jpg");
   background-repeat: no-repeat;
-}
-
-.main-background img{
-  position: absolute;
-  top: 132px;
-  width: 459px;
-  margin-right: 371px;
-  margin-left: 370px;
 }
 
 .visually-hidden{
@@ -112,40 +110,52 @@ a {
   font-weight: 400;
 }
 .appointment{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   height: 291px;
   padding-top: 57px;
-  padding-bottom: 0;
   align-items: center;
   text-align: center;
+
+/* временный элемент*/
+ outline: 2px solid #5496bd;
+/* временный элемент*/
 }
 
 .appointment > p:first-of-type{
   font-size: 30px;
   line-height: 36px;
-  margin: 0;
+  margin: 0 0 42px 0;
   
+  /* временный элемент*/
+ outline: 2px solid #b63131;
+ /* временный элемент*/
+
 }
 
 .appointment > p:nth-of-type(2) {
   line-height: 24px;
   font-weight: 400;
   color: #333333;
+  margin-bottom: 52px;
+
+  /* временный элемент*/
+ outline: 2px solid #54bd6e;
+ /* временный элемент*/
+
 }
 
 .search-form {
   display: none;
 }
 
-.form-button{
-  height: 86px;
-  width: 568px;
-  margin-top: auto;
+.form-button {
+  padding: 35px 139px 33px 140px;
   font-size: 21px;
   color: #ffffff;
   background-color: #766357;
+
+/* временный элемент*/
+outline: 2px solid #d60aff;
+/* временный элемент*/
 }
 
 .form-button:hover,
@@ -169,6 +179,7 @@ a {
   box-sizing: border-box;
   padding-left: 132px;
   padding-right: 101px;
+  background-color: #ffffff;
 }
 
 .main-footer > p {
