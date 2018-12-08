@@ -110,37 +110,24 @@ a {
   font-weight: 400;
 }
 .appointment{
-  height: 291px;
   padding-top: 57px;
   align-items: center;
   text-align: center;
-
-/* временный элемент*/
- outline: 2px solid #5496bd;
-/* временный элемент*/
 }
 
 .appointment > p:first-of-type{
   font-size: 30px;
   line-height: 36px;
-  margin: 0 0 42px 0;
-  
-  /* временный элемент*/
- outline: 2px solid #b63131;
- /* временный элемент*/
-
+  margin: 0;
+  margin-bottom: 42px;
 }
 
 .appointment > p:nth-of-type(2) {
   line-height: 24px;
   font-weight: 400;
   color: #333333;
+  margin: 0;
   margin-bottom: 52px;
-
-  /* временный элемент*/
- outline: 2px solid #54bd6e;
- /* временный элемент*/
-
 }
 
 .search-form {
@@ -148,14 +135,11 @@ a {
 }
 
 .form-button {
+  display: inline-block;
   padding: 35px 139px 33px 140px;
   font-size: 21px;
   color: #ffffff;
   background-color: #766357;
-
-/* временный элемент*/
-outline: 2px solid #d60aff;
-/* временный элемент*/
 }
 
 .form-button:hover,
@@ -205,8 +189,6 @@ outline: 2px solid #d60aff;
 }
 
 .catalog-list{
-  display: flex;
-  flex-direction: column;
   margin: 0;
   padding: 0;
 }
