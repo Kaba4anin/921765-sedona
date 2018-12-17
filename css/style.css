@@ -132,10 +132,6 @@ a {
   margin-bottom: 52px;
 }
 
-.search-form {
-  display: none;
-}
-
 .form-button {
   display: inline-block;
   padding: 35px 139px 33px 140px;
@@ -155,6 +151,103 @@ a {
   font-size: 21px;
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
+}
+
+.search-hotel {
+  width: 568px;
+  height: 395px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 55px;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
+}
+
+
+.search-form p {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-left: 55px;
+  margin-right: 55px;
+  margin-bottom: 30px;
+}
+
+
+.search-form input[type="text"] {
+  box-sizing: border-box;
+  width: 346px;
+  height: 38px;
+  padding: 13px;
+  background-color: #f2f2f2;
+  border: none;
+  text-transform: uppercase;
+}
+
+.search-form label[for="adults"]{
+  margin-right: 41px;
+}
+
+.search-form label[for="children"]{
+  margin-right: 27px;
+  margin-left: 53px;
+}
+
+.search-form input:hover {
+  background-color: #ebebeb;
+}
+
+.search-form input:focus {
+  background-color: #ffffff;
+}
+
+
+.icon-calendar{
+  background-image: url("../img/calendar.svg"); 
+  background-position: 315px center;
+  background-repeat: no-repeat;
+}
+
+.icon-calendar:hover{
+  background-image: url("../img/calendar-black.svg"); 
+}
+
+.icon-calendar:active{
+  background-image: url("../img/calendar-blue.svg"); 
+}
+
+.button-select{
+  display: inline-block;
+  background-color: #f2f2f2;
+  width: 38px;
+  padding: 5px 0;
+}
+
+.search-form input[type="number"]{
+  width: 38px;
+  background-color: #f2f2f2;
+  border: none;
+  padding: 11px 0 10px 0;
+}
+
+.search-form .button {
+  display: inline-block;
+  padding: 17px 199px 17px 199px;
+  font-size: 21px;
+  color: #ffffff;
+  background-color: #81b3d2;
+  border: none;
+  text-transform: uppercase;
+  margin-top: 54px;
+}
+
+.search-form .button:hover {
+  background-color: #669ec0;
+}
+
+.search-form .button:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .main-footer{
@@ -219,6 +312,14 @@ a {
   align-self: flex-end;
 }
 
+.main-footer-logo:hover path{
+  fill: #81b3d2;
+}
+
+.main-footer-logo:active path{
+  fill: #bdbbbc;
+}
+
 .catalog-list{
   margin: 0;
   padding: 0;
@@ -247,6 +348,14 @@ a {
   width: 227px;
   font-size: 14px;
   margin: 0;
+}
+
+.catalog-item h3:hover {
+  color: #81b3d2;
+}
+
+.catalog-item h3:active{
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-item p {
