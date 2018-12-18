@@ -35,34 +35,32 @@
           </p>
         </div>
         <section class="appointment">
-            <h2 class="visually-hidden">Бронирование</h2>
-            <p>Заинтересовались?</p>
-            <p>Укажите предполагаемые даты поездки, <br>
-                и мы покажем вам лучшие предложения гостиниц в седоне</p>
-            <a class="form-button" href="#">Поиск гостиницы в седоне</a>
-            <div class="search-hotel">
-              <form class="search-form" method="post" action="https://echo.htmlacademy.ru"> 
-                <p>
-                <label for="date-arrival">Дата заезда:</label>
-                <input class="icon-calendar" type="text" name="date-arrival" id="date-arrival" placeholder="24 апреля 2017">
-                </p>
-                <p>
-                <label for="date-of-departure">Дата выезда:</label>
-                <input class="icon-calendar" type="text" name="date-of-departure" id="date-of-departure" placeholder="4 июля 2017">
-                </p>
-                <p>
-                <label for="adults">Взрослые:</label>
-                <span class="button-select">-</span>
-                <input type="number" name="adults" min="0" step="1" id="adults" value="2">
-                <span class="button-select">+</span>
-                <label for="children">Дети:</label>
-                <span class="button-select">-</span>
-                <input type="number" name="children" min="0" step="1" id="children" value="0">
-                <span class="button-select">+</span>
-                </p>
-                <button type="submit" class="button" name="submit">Найти</button>
-              </form> 
-            </div>
+          <h2 class="visually-hidden">Бронирование</h2>
+          <p>Заинтересовались?</p>
+          <p>Укажите предполагаемые даты поездки, <br>
+              и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <a class="form-button" href="#">Поиск гостиницы в седоне</a>        
+          <form class="search-form" method="post" action="https://echo.htmlacademy.ru"> 
+            <p>
+            <label for="date-arrival">Дата заезда:</label>
+            <input class="icon-calendar" type="text" name="date-arrival" id="date-arrival" value="24 апреля 2017">
+            </p>
+            <p>
+            <label for="date-of-departure">Дата выезда:</label>
+            <input class="icon-calendar" type="text" name="date-of-departure" id="date-of-departure" value="4 июля 2017">
+            </p>
+            <p>
+            <label for="adults">Взрослые:</label>
+            <button class="button-select-minus" type="button"></button>
+            <input type="text" name="adults" min="0" step="1" id="adults" value="2">
+            <button class="button-select-plus" type="button"></button>
+            <label for="children">Дети:</label>
+            <button class="button-select-minus" type="button"></button>
+            <input type="text" name="children" min="0" step="1" id="children" value="0">
+            <button class="button-select-plus" type="button"></button>
+            </p>
+            <button type="submit" class="button" name="submit">Найти</button>
+          </form>            
         </section>
       </main>
       <footer class="main-footer">

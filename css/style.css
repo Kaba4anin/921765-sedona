@@ -153,7 +153,7 @@ a {
   background-color: #503e33;
 }
 
-.search-hotel {
+.search-form{
   width: 568px;
   height: 395px;
   margin-left: auto;
@@ -162,7 +162,6 @@ a {
   background-color: #ffffff;
   box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
 }
-
 
 .search-form p {
   display: flex;
@@ -216,18 +215,85 @@ a {
   background-image: url("../img/calendar-blue.svg"); 
 }
 
-.button-select{
+.button-select-minus{
   display: inline-block;
   background-color: #f2f2f2;
   width: 38px;
-  padding: 5px 0;
+  padding: 24px 0 14px 0;
+  border: none;
+  position: relative;
 }
 
-.search-form input[type="number"]{
+.button-select-minus::before{
+  content: "";
+  width: 12px;
+  height: 3px;
+  background-color: #cacaca;
+  position: absolute;
+  bottom: 17px;
+  right: 13px;
+}
+
+.button-select-plus{
+  display: inline-block;
+  background-color: #f2f2f2;
+  width: 38px;
+  padding: 24px 0 14px 0;
+  border: none;
+  position: relative;
+}
+
+.button-select-plus::before{
+  content: "";
+  width: 12px;
+  height: 3px;
+  background-color: #cacaca;
+  position: absolute;
+  bottom: 17px;
+  right: 13px;
+}
+
+.button-select-plus::after{
+  content: "";
+  width: 12px;
+  height: 3px;
+  background-color: #cacaca;
+  position: absolute;
+  bottom: 17px;
+  right: 13px;
+  transform: rotate(90deg);
+}
+
+.button-select-minus:hover::before,
+.button-select-plus:hover::before,
+.button-select-plus:hover::after{
+  background-color: #000000;
+}
+
+.button-select-minus:active::before,
+.button-select-plus:active::before,
+.button-select-plus:active::after{
+  background-color: #669ec0;
+}
+
+.button-select::after{
+  content: "";
+  width: 12px;
+  height: 3px;
+  background-color: #cacaca;
+  position: absolute;
+  bottom: 17px;
+  right: 13px;
+  transform: rotate(90deg);
+}
+
+.search-form input[name="adults"],
+.search-form input[name="children"] {
   width: 38px;
   background-color: #f2f2f2;
   border: none;
   padding: 11px 0 10px 0;
+  text-align: center;
 }
 
 .search-form .button {
@@ -273,7 +339,7 @@ a {
   justify-content: space-between;
   list-style: none;
   padding: 0;
-  margin: 0 auto;
+  margin: 0 auto 0 145px;
 }
 
 .social-button{
