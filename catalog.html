@@ -35,7 +35,7 @@
             <p><label><input type="checkbox"> Мотель</label></p>
             <p><label><input type="checkbox"> Апартаменты</label></p>
           </fieldset>
-          <div class="filter-range">
+          <fieldset>
             <div class="filter-range-title">Стоимость в сутки (р):</div>
             <div class="price-controls">
               <label class="min-price">от <input type="text" name="min-price" value="0"></label>
@@ -49,18 +49,16 @@
               <div class="range-toggle range-toggle-max"></div>
             </div>
             <button class="btn-transparent" type="submit">Показать</button>
-          </div>
+          </fieldset>
         </form>
-        <div>
-          <p>Найдено: 3</p>
-          <p>Сортировка:</p>
-          <ul>
-            <li>По цене</li>
-            <li>По типу</li>
-            <li>По рейтингу</li>
-          </ul>
-        </div>  
         <section class="main-hotel">
+          <div>
+            <p>Найдено: 3</p>
+            <p>Сортировка:</p>
+            <a class="sorting-price" href="#">По цене</a>
+            <a class="sorting-type" href="#">По типу</a>
+            <a class="sorting-rating" href="#">По рейтингу</a>
+          </div>  
           <h2 class="visually-hidden">Гостиницы</h2>
           <ul class="catalog-list">
             <li class="catalog-item">
