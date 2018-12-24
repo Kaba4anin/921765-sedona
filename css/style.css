@@ -41,8 +41,6 @@ a {
   padding: 0;
 }
 
-
-
 .main-header-logo{
   position: absolute;
   left: 46%;
@@ -117,6 +115,195 @@ a {
   text-align: center;
 }
 
+.real-city{
+  display: flex;
+  background-color: #81b3d2;
+  align-items: flex-start;
+}
+
+.real-city-text{
+  width: 400px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  padding-top: 46px;
+}
+
+.real-city-text p{
+  line-height: 21px;
+}
+ 
+.real-city-text p:first-of-type{
+  font-size: 21px;
+  font-weight: 700;
+  width: 140px;
+  margin: 0 auto 22px auto;
+}
+
+.real-city-text p:nth-of-type(2){
+  margin: 0 auto 22px auto;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.real-city-text p:nth-of-type(3){
+  width: 280px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.real-city-image{
+  width: 800px;
+  height: 256px;
+  padding: 0;
+  margin: 0;
+}
+
+.devils-bridge{
+  display: flex;
+  background-color: #81b3d2;
+  align-items: flex-start;
+}
+
+.devils-bridge-image{
+  width: 800px;
+  height: 256px;
+  padding: 0;
+  margin: 0;
+}
+
+.devils-bridge-text{
+  width: 400px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  padding-top: 46px;
+}
+
+.devils-bridge-text p{
+  line-height: 21px;
+}
+ 
+.devils-bridge-text p:first-of-type{
+  font-size: 21px;
+  font-weight: 700;
+  width: 160px;
+  margin: 0 auto 22px auto;
+}
+
+.devils-bridge-text p:nth-of-type(2){
+  margin: 0 auto 22px auto;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.devils-bridge-text p:nth-of-type(3){
+  width: 303px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.features-list{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 159px 54px 82px 54px;
+  margin: 0px;
+}
+
+.features-list li{
+  text-align: center;
+  position: relative;
+}
+
+.features-list h3{
+  font-size: 21px;
+  margin: 0 auto 21px auto;
+}
+
+.features-list p{
+  width: 290px;
+  color: #333333; 
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+}
+
+.features-list li:nth-child(1)::before{
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 72px;
+  bottom: 115px;
+  right: 108px;
+  background-image: url("../img/house-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.features-list li:nth-child(2)::before{
+  content: "";
+  position: absolute;
+  width: 74px;
+  height: 70px;
+  bottom: 115px;
+  right: 108px;
+  background-image: url("../img/burger-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.features-list li:nth-child(3)::before{
+  content: "";
+  position: absolute;
+  width: 64px;
+  height: 76px;
+  bottom: 115px;
+  right: 108px;
+  background-image: url("../img/present-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.description{
+  background-color: #eeeeee;
+}
+
+.description-list{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 48px 69px 36px 68px;
+  margin: 0px;
+}
+
+.description-list li{
+  text-align: center;
+}
+
+.description-list p:nth-child(1){
+  width: 150px;
+  margin: 0 auto 23px auto;
+  line-height: 21px;
+  font-size: 21px;
+}
+
+.description-list p:nth-child(2),
+.description-list p:nth-child(3){
+  width: 262px;
+  margin: 0 auto 22px auto;
+  color: #333333;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.appointment{
+  position: relative;
+}
+
 .appointment > p:first-of-type{
   font-size: 30px;
   line-height: 36px;
@@ -154,11 +341,14 @@ a {
 }
 
 .search-form{
+  position: absolute;
   width: 568px;
-  height: 395px;
+  height: 355px;
+  left: 316px;
+  top: 330px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 55px;
+  padding-top: 40px;
   background-color: #ffffff;
   box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
   display: block;
@@ -309,7 +499,7 @@ a {
   background-color: #81b3d2;
   border: none;
   text-transform: uppercase;
-  margin-top: 54px;
+  margin-top: 25px;
 }
 
 .search-form .button:hover {

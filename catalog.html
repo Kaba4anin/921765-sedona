@@ -22,35 +22,37 @@
         </nav>
       </header>
       <main>
-        <form class="filter">
-          <fieldset>
-            <legend>Инфраструктура:</legend>
-            <p><label><input type="checkbox"> Бассейн</label></p>
-            <p><label><input type="checkbox"> Парковка</label></p>
-            <p><label><input type="checkbox"> Wi-Fi</label></p>
-          </fieldset>
-          <fieldset>
-            <legend>Тип жилья:</legend>
-            <p><label><input type="checkbox"> Гостиница</label></p>
-            <p><label><input type="checkbox"> Мотель</label></p>
-            <p><label><input type="checkbox"> Апартаменты</label></p>
-          </fieldset>
-          <fieldset>
-            <div class="filter-range-title">Стоимость в сутки (р):</div>
-            <div class="price-controls">
-              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
-            </div>
-            <div class="range-controls">
-              <div class="scale">
-                <div class="bar"></div>
+        <section class="main-filter">
+          <form class="filter">
+            <fieldset>
+              <legend>Инфраструктура:</legend>
+              <p><label><input type="checkbox"> Бассейн</label></p>
+              <p><label><input type="checkbox"> Парковка</label></p>
+              <p><label><input type="checkbox"> Wi-Fi</label></p>
+            </fieldset>
+            <fieldset>
+              <legend>Тип жилья:</legend>
+              <p><label><input type="checkbox"> Гостиница</label></p>
+              <p><label><input type="checkbox"> Мотель</label></p>
+              <p><label><input type="checkbox"> Апартаменты</label></p>
+            </fieldset>
+            <fieldset>
+              <div class="filter-range-title">Стоимость в сутки (р):</div>
+              <div class="price-controls">
+                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
               </div>
-              <div class="range-toggle range-toggle-min"></div>
-              <div class="range-toggle range-toggle-max"></div>
-            </div>
-            <button class="btn-transparent" type="submit">Показать</button>
-          </fieldset>
-        </form>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+              <button class="btn-transparent" type="submit">Показать</button>
+            </fieldset>
+          </form>
+        </section>
         <section class="main-hotel">
           <div>
             <p>Найдено: 3</p>
