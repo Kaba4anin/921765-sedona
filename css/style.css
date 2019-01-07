@@ -254,7 +254,8 @@ input[type="checkbox"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -265,7 +266,9 @@ input[type="checkbox"].visually-hidden {
   padding: 160px 0 83px 0;
   text-align: center;
   position: relative;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 auto;
 }
 
@@ -327,7 +330,8 @@ input[type="checkbox"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -412,6 +416,24 @@ input[type="checkbox"].visually-hidden {
   background-color: #503e33;
 }
 
+@-webkit-keyframes form-opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes form-opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .search-form {
   position: absolute;
   width: 568px;
@@ -425,6 +447,8 @@ input[type="checkbox"].visually-hidden {
   -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
           box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
   display: block;
+  -webkit-animation: form-opacity 1s;
+          animation: form-opacity 1s;
 }
 
 .search-form-show {
@@ -445,7 +469,6 @@ input[type="checkbox"].visually-hidden {
   margin-right: 55px;
   margin-bottom: 30px;
 }
-
 
 .search-form input[type="text"] {
   -webkit-box-sizing: border-box;
@@ -475,7 +498,6 @@ input[type="checkbox"].visually-hidden {
 .search-form input:focus {
   background-color: #ffffff;
 }
-
 
 .icon-calendar {
   background-image: url("../img/calendar.svg");
@@ -773,7 +795,7 @@ input[type="checkbox"].visually-hidden {
   background-position: 0 0;
 }
 
-.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox:checked + label::after{
   content: "";
   position: absolute;
   top: 0;
@@ -783,6 +805,11 @@ input[type="checkbox"].visually-hidden {
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.filter-input-checkbox:focus:not(:checked) + label::before,
+.filter-input-checkbox:focus:checked + label::after {
+  outline: 1px solid #81b3d2;
 }
 
 .sorting {
@@ -1001,7 +1028,6 @@ input[type="checkbox"].visually-hidden {
   border-radius: 2px;
   cursor: pointer;
 }
-
 
 .btn-transparent:hover {
   color: #000000;
