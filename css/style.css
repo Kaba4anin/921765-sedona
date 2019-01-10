@@ -231,7 +231,7 @@ input[type="checkbox"].visually-hidden {
   font-size: 21px;
   font-weight: 700;
   width: 151px;
-  margin: 0 auto 26px auto;
+  margin: 0 auto 24px auto;
 }
 
 .devils-bridge-text p:nth-of-type(2) {
@@ -263,7 +263,7 @@ input[type="checkbox"].visually-hidden {
 
 .features-list li {
   width: 400px;
-  padding: 160px 0 83px 0;
+  padding: 160px 0 80px 0;
   text-align: center;
   position: relative;
   -webkit-box-align: center;
@@ -340,7 +340,7 @@ input[type="checkbox"].visually-hidden {
 .description-list li {
   width: 400px;
   text-align: center;
-  padding-top: 48px;
+  padding-top: 47px;
 }
 
 .first-line {
@@ -352,7 +352,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .second-line {
-  margin: 0 0 24px 0;
+  margin: 0 0 22px 0;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -360,7 +360,7 @@ input[type="checkbox"].visually-hidden {
 
 .third-line {
   width: 262px;
-  margin: 0 auto 61px auto;
+  margin: 0 auto 59px auto;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -368,7 +368,7 @@ input[type="checkbox"].visually-hidden {
 
 .third-line-3 {
   width: 247px;
-  margin: 0 auto 61px auto;
+  margin: 0 auto 59px auto;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -391,7 +391,7 @@ input[type="checkbox"].visually-hidden {
   font-weight: 400;
   color: #333333;
   margin: 0;
-  margin-bottom: 47px;
+  margin-bottom: 45px;
 }
 
 .form-button {
@@ -499,18 +499,39 @@ input[type="checkbox"].visually-hidden {
   background-color: #ffffff;
 }
 
-.icon-calendar {
-  background-image: url("../img/calendar.svg");
-  background-position: 315px center;
-  background-repeat: no-repeat;
+.icon-calendar-1 {
+  position: absolute;
+  width: 21px;
+  height: 22px;
+  top: 63px;
+  left: 483px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
-.icon-calendar:hover {
-  background-image: url("../img/calendar-black.svg");
+.icon-calendar-2 {
+  position: absolute;
+  width: 21px;
+  height: 22px;
+  top: 130px;
+  left: 483px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
-.icon-calendar:active {
-  background-image: url("../img/calendar-blue.svg");
+.icon-calendar-1:hover path,
+.icon-calendar-2:hover path {
+  fill: #231f20;
+}
+
+.icon-calendar-1:active path,
+.icon-calendar-2:active path {
+  fill: #81b3d2;
+  border: none;
 }
 
 .button-select-minus {
@@ -621,6 +642,32 @@ input[type="checkbox"].visually-hidden {
   color: rgba(255, 255, 255, 0.3);
 }
 
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
 .map {
   height: 472px;
   background-color: #cbdda9;
@@ -641,7 +688,7 @@ input[type="checkbox"].visually-hidden {
           align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 28px 101px 28px 132px;
+  padding: 27px 101px 28px 132px;
 }
 
 .main-footer > p {
